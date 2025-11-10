@@ -16,7 +16,8 @@ SECRET_KEY = 'django-insecure-l_$(y%1$s^_(24zh5n)z!fxj&m8w0x%4p*gcpjo+t&cg*fp8)y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ecommerce-miniproject-pihh.onrender.com', '127.0.0.1', 'localhost']
+
 
 # Application definition
 INSTALLED_APPS = [
