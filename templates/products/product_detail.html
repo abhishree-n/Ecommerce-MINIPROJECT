@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h3>{{ product.name }}</h3>
+            {% if product.image %}
+            <img src="{{ product.image.url }}" class="img-fluid mb-3" alt="{{ product.name }}">
+            {% endif %}
+            <p>{{ product.description }}</p>
+            <p><strong>Price:</strong> ₹{{ product.price }}</p>
+            <a href="{% url 'create_order' product.id %}" class="btn btn-success">Buy Now</a>
+            <a href="{% url 'product_list' %}" class="btn btn-secondary">Back</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
